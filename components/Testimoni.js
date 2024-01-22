@@ -10,40 +10,37 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
+      name: "Usman",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Addis Ababa",
+      country: "Ethiopia",
+      rating: "5",
+      hasVideo: true,
+      videoSource: 'assets/videos/usman.mp4',
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LuyBrand always the best",
+        "",
     },
     {
-      name: "iezh Robert",
+      name: "Birhan",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Addis Ababa",
+      country: " Ethiopia",
+      rating: "5",
+      hasVideo: true,
+      videoSource: 'assets/videos/birhan.mp4',
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LuyBrand always the best",
+        "",
     },
     {
-      name: "iezh Robert",
+      name: "Fitsum",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Addis Ababa",
+      country: " Ethiopia",
+      rating: "5",
+      hasScreenshot: true,
+      screenshotSource: 'assets/screenshots/fitsum.jpeg',
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LuyBrand always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LuyBrand always the best",
+        "",
     },
   ],
 }) => {
@@ -90,53 +87,68 @@ const Testimoni = ({
         className="flex items-stretch justify-items-stretch"
       >
         {listTestimoni.map((listTestimonis, index) => (
-          <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
+          <div className="px-3 flex items-stretch " key={index}>
+            <div className="border-2 min-h-[700px] border-gray-500 hover:border-white transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
-                  <Image
-                    src={listTestimonis.image}
-                    height={50}
-                    width={50}
-                    alt="Icon People"
-                  />
                   <div className="flex flex-col ml-5 text-left">
-                    <p className="text-lg text-black-600 capitalize">
+                    <p className="text-lg text-white capitalize">
                       {listTestimonis.name}
                     </p>
-                    <p className="text-sm text-black-500 capitalize">
+                    <p className="text-sm text-white capitalize">
                       {listTestimonis.city},{listTestimonis.country}
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
+                {/* <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
                   <p className="text-sm">{listTestimonis.rating}</p>
                   <span className="flex ml-4">
                     <Stars className="h-4 w-4" />
                   </span>
-                </div>
+                </div> */}
               </div>
-              <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
+              <p className="mt-5 text-left">{listTestimonis.testimoni}</p>
+
+              {/* Conditionally render video player or screenshot based on hasVideo and hasScreenshot */}
+              {listTestimonis.hasVideo ? (
+                <div>
+                  <video controls>
+                    <source src={listTestimonis.videoSource} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
+
+                </div>
+              ) : listTestimonis.hasScreenshot ? (
+                <div>
+                  <img
+
+                    src={listTestimonis.screenshotSource}
+                    alt="Screenshot"
+                  />
+                </div>
+              ) : null}
             </div>
           </div>
         ))}
+
       </Slider>
-      <div className="flex w-full items-center justify-end">
+      {/* <div className="flex w-full items-center justify-end">
         <div className="flex flex-none justify-between w-auto mt-14">
           <div
-            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
+            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-white border hover:bg-white hover:text-white-500 transition-all text-white cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
             <ArrowBack className="h-6 w-6 " />
           </div>
           <div
-            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
+            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-white border hover:bg-white hover:text-white-500 transition-all text-white cursor-pointer"
             onClick={sliderRef?.slickNext}
           >
             <ArrowNext className="h-6 w-6" />
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -4,10 +4,10 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: 'LuyBrand',
-  siteName: 'LuyBrand',
+  title: 'LUY Masterclass',
+  siteName: 'LUY Masterclass',
   description:
-    'LuyBrand is a lifestyle Brand by HAMDIFEKI ',
+    'LUY Masterclass',
   // change base url of your web (without '/' at the end)
   url: 'https://luybrand.com.et',
   type: 'website',
@@ -15,7 +15,7 @@ const defaultMeta = {
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
   image: 'https://luybrand.com.et/assets/card-image.png',
-  author: 'HAMDIFEKI'
+  author: 'Surafel Yimam'
 };
 
 /**
