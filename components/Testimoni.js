@@ -32,13 +32,57 @@ const Testimoni = ({
         "",
     },
     {
-      name: "Fitsum",
+      name: "Hana",
       image: "/assets/people-3.png",
       city: "Addis Ababa",
       country: " Ethiopia",
       rating: "5",
       hasScreenshot: true,
-      screenshotSource: 'assets/screenshots/fitsum.jpeg',
+      screenshotSource: 'assets/screenshots/rahel.jpeg',
+      testimoni:
+        "",
+    },
+    {
+      name: "Alex",
+      image: "/assets/people-3.png",
+      city: "Addis Ababa",
+      country: " Ethiopia",
+      rating: "5",
+      hasScreenshot: true,
+      screenshotSource: 'assets/screenshots/alex.jpeg',
+      testimoni:
+        "",
+    },
+    {
+      name: "Yasub",
+      image: "/assets/people-3.png",
+      city: "Harrar",
+      country: " Ethiopia",
+      rating: "5",
+      hasScreenshot: true,
+      screenshotSource: 'assets/screenshots/yasub.jpeg',
+      testimoni:
+        "",
+    },
+    {
+      name: "Sami",
+      image: "/assets/people-3.png",
+      city: "Shashemene",
+      country: " Ethiopia",
+      rating: "5",
+      hasScreenshot: true,
+      screenshotSource: 'assets/screenshots/sami.jpeg',
+      testimoni:
+        "",
+    },
+    {
+      name: "Abraham",
+      image: "/assets/people-3.png",
+      city: "Addis Ababa",
+      country: " Ethiopia",
+      rating: "5",
+      hasScreenshot: true,
+      screenshotSource: 'assets/screenshots/abraham.jpeg',
       testimoni:
         "",
     },
@@ -133,7 +177,7 @@ const Testimoni = ({
         ))}
 
       </Slider>
-      {/* <div className="flex w-full items-center justify-end">
+      <div className="flex w-full items-center justify-end">
         <div className="flex flex-none justify-between w-auto mt-14">
           <div
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-white border hover:bg-white hover:text-white-500 transition-all text-white cursor-pointer"
@@ -148,7 +192,7 @@ const Testimoni = ({
             <ArrowNext className="h-6 w-6" />
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

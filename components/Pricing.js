@@ -37,7 +37,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center ">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center lg:min-w-[500px] items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center min-w-[500px] items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -68,7 +68,9 @@ const Pricing = () => {
                   <p className="text-2xl text-white text-center mb-4 ">
                     Free
                   </p>
-                  <ButtonOutline>Join Now</ButtonOutline>
+                  <a href="https://t.me/Luybrand">
+                    <ButtonOutline >Join Now</ButtonOutline>
+                  </a>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -76,7 +78,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center lg:min-w-[500px] border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center min-w-[500px] border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -110,8 +112,7 @@ const Pricing = () => {
                   <p className="text-2xl text-white text-center mb-4 ">
                     998 Birr
                   </p>
-
-                  <ButtonOutline>Join Now</ButtonOutline>
+                  <ButtonOutline link={"https://google.com"} >Join Now</ButtonOutline>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -122,7 +123,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center lg:min-w-[500px] items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center min-w-[500px] items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -157,7 +158,7 @@ const Pricing = () => {
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-white text-center mb-4 ">
-                   2289 Birr
+                    2289 Birr
                   </p>
                   <ButtonOutline>Join Now</ButtonOutline>
                 </div>
@@ -166,7 +167,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center lg:min-w-[500px] border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center min-w-[500px] border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale: 1.1,
                   transition: {

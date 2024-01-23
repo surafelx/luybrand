@@ -5,6 +5,28 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import LogoVPN from "../public/assets/Logo.svg";
+import YouTube from 'react-youtube';
+
+const VideoPlayer = () => {
+  // Video options (you can customize these as needed)
+  const opts = {
+    height: '390',
+    width: '640',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+  };
+
+  // Video ID from the YouTube URL
+  const videoId = '6jBb1RFBnBY';
+
+  return (
+    <div className="video-container">
+      <YouTube videoId={videoId} opts={opts} />
+    </div>
+  );
+};
 
 const Hero = ({
 
@@ -64,47 +86,35 @@ const Hero = ({
 
         </motion.div>
       </ScrollAnimationWrapper>
-      <div className="pt-[20px] pb-[112px]">
+      <div className="pt-[20px] px-10 pb-[112px]">
         <ScrollAnimationWrapper>
           <motion.div
             className="w-full justify-center"
             variants={scrollAnimation}>
-            <h1 style={{ fontFamily: 'hiwua' }} className="text-3xl text-center">
+            <h1 style={{ fontFamily: 'jiret' }} className="text-3xl text-center">
               የማህበራዊ ሚዲያ በመጠቀም እና ትርፋማ እድሎችን በመክፈት የእራሳችሁን ገቢ ለመፍጠር እድሉን ተጠቀሙ !
             </h1>
           </motion.div>
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper className="pt-12">
           <motion.div
-            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8"
+            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-4 justify-center"
             variants={scrollAnimation}>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
                 <div className="relative">
-                  <video
-                    ref={videoRef}
-                    className="h-full w-full rounded-lg"
-                    controls
-                  >
-                    <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <button onClick={togglePlayPause} className="bg-white p-4 rounded-full text-gray-800">
-                      {isPlaying ? 'Pause' : 'Play'}
-                    </button>
-                  </div>
+                  <VideoPlayer />
                 </div>
               </motion.div>
             </div>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-              <p style={{ fontFamily: 'Poppins', textTransform: 'uppercase', fontWeight: '900', color: 'white', fontSize: '18px'}} >
+              <p style={{ fontFamily: 'Poppins', textTransform: 'uppercase', fontWeight: '900', color: 'white', fontSize: '18px' }} >
                 Mastering the Art of Digital Influence
               </p>
-              <p style={{ fontFamily: 'hiwua', color: 'white', fontSize: '18px' }}>
+              <p style={{ fontFamily: 'jiret', color: 'white', fontSize: '18px' }}>
                 የዲጂታል ተፅእኖ ጥበብን እንዴት ወደ ትርፍ መቀየር ይቻላል?
               </p>
-              <ul style={{ fontFamily: 'hiwua' }} className="mt-1 mb-6 flex flex-col gap-4">
+              <ul style={{ fontFamily: 'jiret' }} className="mt-1 mb-6 flex flex-col gap-4">
                 <li>
                   <div className="flex gap-3 mt-4">
                     <div>-</div>

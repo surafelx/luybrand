@@ -4,13 +4,6 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
-]
-
 const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
@@ -19,24 +12,23 @@ const Feature = () => {
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
       id="feature"
     >
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
+      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 my-12">
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/Illustration2.png"
-              alt="VPN Illustrasi"
+              src="/assets/phone.png"
+              alt="Hamdi Bank Account"
               layout="responsive"
               quality={100}
-              height={414}
-              width={508}
+              height={594}
+              width={420}
             />
           </motion.div>
         </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper  className="my-auto">
+        <ScrollAnimationWrapper  className="my-40">
           <motion.div variants={scrollAnimation}>
-            <p  style={{ fontFamily: 'Poppins', fontWeight: '500', color: 'white', fontSize: '18px'}}>
-              During my college days, financial struggles were a real challenge. However, I saw a chance in creating digital products and, by applying my skills and knowledge, developed something valuable. Through smart social media marketing, I gained a substantial online following, exceeding 100,000 engaged followers. The demand for my product increased, resulting in significant sales growth. This success not only eased my financial burden but also highlighted the impact of determination and digital entrepreneurship.
-
+            <p  style={{ fontFamily: 'jiret', fontWeight: '500', color: 'white', fontSize: '18px'}}>
+            በኮሌጅ በምቆይበት ጊዜ የገንዘብ ችግር በጣም ከባድ ነበር። ይሁን እንጂ የዲጂታል ምርቶችን የመፍጠር አጋጣሚ አገኘሁ ፤ እንዲሁም ችሎታዬንና እውቀቴን ተግባራዊ በማድረግ ጠቃሚ የሆነ ነገር ማስተማር ጀምርኩ። በማህበራዊ ሚዲያ በኩል በኢንተርኔት ከ100,000 በላይ ተከታይ አፍርቻለው። በምርቶቼ የሰው ፍላጎት እየጨመረ በመምጣቱ ከፍተኛ ሽያጭ እያስገኘው መምጣት ጀመርኩ። በወር ከ10ሺ ብር በላይ ማትረፍ ጀመርኩ ። ማጋነን እንዳይሆን ብዬ ነው እንጂ ከ 100ሺ ብር በላይም ሰርቻለው። እናም ይህ ስኬት የገንዘብ ሸክሜን ከማቃለሌም በላይ ቆራጥነት እና የዲጂታል ድርጅቶች የሚያሳድሩትን ተጽዕኖ ጎላ አድርጎ ገልጿልኛል። እናም በአጭር ግዜ ውስጥ ላስተምራችሁ እፈልጋለው። እንቀጥል።
             </p>
           </motion.div>
         </ScrollAnimationWrapper>
