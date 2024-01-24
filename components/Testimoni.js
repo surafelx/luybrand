@@ -83,9 +83,9 @@ const Testimoni = ({
 }) => {
   return (
     <>
-      <div className="flex items-stretch justify-items-stretch flex-grow flex-wrap">
+      <div className="block mx-auto md:flex  items-stretch justify-items-stretch flex-grow flex-wrap">
         {listTestimoni.map((listTestimonis, index) => (
-          <div className="p-2 items-stretch w-1/3" key={index}>
+          <div className="p-2 items-stretch md:w-1/3 w-full" key={index}>
             <div className="border-2 md:min-h-[700px] border-gray-500 hover:border-white transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
