@@ -5,7 +5,7 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import YouTube from 'react-youtube';
 
 const VideoPlayer = () => {
-  const videoId = 'bxWYHPXfUFU';
+  const videoId = '6jBb1RFBnBY';
 
   return (
     <div className="video-container rounded-xl ml-auto max-w-2xl">
