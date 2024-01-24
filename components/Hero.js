@@ -1,23 +1,22 @@
-import React, { useMemo,} from "react";
+import React, { useMemo, } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import YouTube from 'react-youtube';
 
 const VideoPlayer = () => {
-  const opts = {
-    height: 'auto',
-    width: '100%',
-    playerVars: {
-      autoplay: 0,
-    },
-  };
-
   const videoId = '6jBb1RFBnBY';
 
   return (
-    <div className="video-container rounded-xl">
-      <YouTube videoId={videoId} opts={opts} />
+    <div className="video-container rounded-xl md:ml-auto max-w-2xl">
+      <iframe
+        width="100%"
+        height="400"
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title="YouTube Video"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
       <style jsx>{`
         .video-container {
           border-radius: 10px; // Adjust the value as needed
@@ -27,7 +26,6 @@ const VideoPlayer = () => {
     </div>
   );
 };
-
 
 const Hero = ({
 
@@ -47,7 +45,7 @@ const Hero = ({
             <img
               src="assets/Logo.svg"
               alt="Logo"
-              style={{ height: '50px', margin: 'auto' }} 
+              style={{ height: '50px', margin: 'auto' }}
             />
           </div>
         </motion.div>
@@ -68,9 +66,8 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
-                <div className="relative">
-                  <VideoPlayer />
-                </div>
+                
+                <VideoPlayer />
               </motion.div>
             </div>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
@@ -110,7 +107,7 @@ const Hero = ({
 
           </motion.div>
         </ScrollAnimationWrapper>
-      </div> 
+      </div>
 
     </div >
   );
