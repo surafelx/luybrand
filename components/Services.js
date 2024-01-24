@@ -4,13 +4,6 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
-]
-
 const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
@@ -54,6 +47,7 @@ const Feature = () => {
               src="/assets/copy.jpg"
               alt="VPN Illustrasi"
               layout="responsive"
+              className="rounded-xl"
               quality={100}
               height={508}
               width={508}
@@ -71,6 +65,7 @@ const Feature = () => {
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}
+              className="rounded-xl"
               height={508}
               width={508}
             />
@@ -139,6 +134,7 @@ const Feature = () => {
               src="/assets/strategy.jpg"
               alt="VPN Illustrasi"
               layout="responsive"
+              className="rounded-xl"
               quality={100}
               height={508}
               width={508}
@@ -156,6 +152,7 @@ const Feature = () => {
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}
+              className="rounded-xl"
               height={508}
               width={508}
             />

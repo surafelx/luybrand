@@ -18,23 +18,6 @@ const defaultMeta = {
   author: 'Surafel Yimam'
 };
 
-/**
- * Next Head component populated with necessary SEO tags and title
- * props field used:
- * - title
- * - siteName
- * - description
- * - url
- * - type
- * - robots
- * - image
- * - date
- * - author
- * - templateTitle
- * all field are optional (default value defined on defaultMeta)
- * @example
- * <SeoHead title="Page's Title" />
- */
 const SeoHead = (props) => {
   const router = useRouter();
   const meta = {
@@ -42,8 +25,6 @@ const SeoHead = (props) => {
     ...props
   };
 
-  // Use siteName if there is templateTitle
-  // but show full title if there is none
   meta.title = props.templateTitle
     ? `${props.templateTitle} | ${meta.siteName}`
     : meta.title;
@@ -98,7 +79,6 @@ const SeoHead = (props) => {
   );
 };
 
-// Favicons, other icons, and manifest definition
 const favicons = [
   {
     rel: 'apple-touch-icon',

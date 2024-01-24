@@ -1,9 +1,6 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
 import Testimoni from "./Testimoni";
-import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
-import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
@@ -18,21 +15,6 @@ const Pricing = () => {
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
-          {/* <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white leading-relaxed"
-            >
-              Choose Your Plan
-            </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >
-              Let's choose the package that is best for you and explore it happily
-              and cheerfully.
-            </motion.p>
-          </ScrollAnimationWrapper> */}
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center ">
               <motion.div
@@ -46,11 +28,11 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/Standard.png"
-                    width={145}
-                    height={165}
-                    alt="Standard Plan"
+                <img
+                    src="/assets/basic.png"
+                    className=""
+                    style={{ width: "100%", height: "auto" }}
+                    alt="Premium Plan"
                   />
                 </div>
                 <p className="text-lg text-white font-medium capitalize my-2 sm:my-7">
@@ -87,12 +69,13 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/Premium.png"
-                    width={145}
-                    height={165}
+                  <img
+                    src="/assets/standard.png"
+                    className=""
+                    style={{ width: "100%", height: "auto" }}
                     alt="Premium Plan"
                   />
+
                 </div>
                 <p className="text-lg text-white font-medium capitalize my-2 sm:my-7">
                   Standard Access{" "}
@@ -112,7 +95,9 @@ const Pricing = () => {
                   <p className="text-2xl text-white text-center mb-4 ">
                     998 Birr
                   </p>
-                  <ButtonOutline link={"https://google.com"} >Join Now</ButtonOutline>
+                  <a href="https://t.me/Luybrand1">
+                    <ButtonOutline >Join Now</ButtonOutline>
+                  </a>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -132,11 +117,11 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/Standard.png"
-                    width={145}
-                    height={165}
-                    alt="Standard Plan"
+                <img
+                    src="/assets/vip.png"
+                    className=""
+                    style={{ width: "100%", height: "auto" }}
+                    alt="Premium Plan"
                   />
                 </div>
                 <p className="text-lg text-white font-medium capitalize my-2 sm:my-7">
@@ -160,7 +145,9 @@ const Pricing = () => {
                   <p className="text-2xl text-white text-center mb-4 ">
                     2289 Birr
                   </p>
-                  <ButtonOutline>Join Now</ButtonOutline>
+                  <a href="https://t.me/Luymentor">
+                    <ButtonOutline >Join Now</ButtonOutline>
+                  </a>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -176,11 +163,11 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/Standard.png"
-                    width={145}
-                    height={165}
-                    alt="Standard Plan"
+                <img
+                    src="/assets/one-on-one.png"
+                    className=""
+                    style={{ width: "100%", height: "auto" }}
+                    alt="Premium Plan"
                   />
                 </div>
                 <p className="text-lg text-white font-medium capitalize my-2 sm:my-7">
@@ -209,36 +196,12 @@ const Pricing = () => {
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
               Testimonials
             </motion.h3>
-            {/* <motion.p
-              variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
-            >
-              These are the stories of our customers who have joined us with great
-              pleasure when using this crazy feature.
-            </motion.p> */}
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
             <motion.div variants={scrollAnimation}>
               <Testimoni />
             </motion.div>
           </ScrollAnimationWrapper>
-          {/* <ScrollAnimationWrapper className="relative w-full mt-16">
-            <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
-              <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
-                <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-                  <h5 className="text-white text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    Subscribe Now for <br /> Get Special Features!
-                  </h5>
-                  <p>Let's subscribe with us and find the fun.</p>
-                </div>
-                <ButtonPrimary>Get Started</ButtonPrimary>
-              </div>
-              <div
-                className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
-                style={{ filter: "blur(114px)" }}
-              ></div>
-            </motion.div>
-          </ScrollAnimationWrapper> */}
         </div>
       </div>
     </div>
