@@ -5,19 +5,18 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import YouTube from 'react-youtube';
 
 const VideoPlayer = () => {
+  const opts = {
+    height: "390",
+    width: "640",
+    playerVars: {
+      autoplay: 0
+    }
+  };
   const videoId = '6jBb1RFBnBY';
 
   return (
-    <div className="video-container rounded-xl ml-auto max-w-2xl">
-      <iframe
-        width="100%"
-        height="400"
-        className="block"
-        src={`https://www.youtube.com/embed/${videoId}`}
-        title="YouTube Video"
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
+    <div className="video-container flex justify-center rounded-xl">
+      <YouTube videoId={videoId} opts={opts} />
       <style jsx>{`
         .video-container {
           border-radius: 10px; // Adjust the value as needed
@@ -27,6 +26,7 @@ const VideoPlayer = () => {
     </div>
   );
 };
+
 
 const Hero = ({
 
@@ -67,8 +67,9 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
-
-                <VideoPlayer />
+                <div className="relative">
+                  <VideoPlayer />
+                </div>
               </motion.div>
             </div>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
