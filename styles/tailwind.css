@@ -111,3 +111,10 @@ li.check:before {
   font-size: 24px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .video-container {
+    width: 100%;
+    height: auto;
+  }
+}

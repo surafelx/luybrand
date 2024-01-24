@@ -69,6 +69,7 @@ const SeoHead = (props) => {
       ))}
       {/* Windows 8 app icon */}
       <meta name='msapplication-TileColor' content='#F53838' />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         name='msapplication-TileImage'
         content='/favicon/ms-icon-144x144.png'

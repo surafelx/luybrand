@@ -6,8 +6,8 @@ import YouTube from 'react-youtube';
 
 const VideoPlayer = () => {
   const opts = {
-    height: '400',
-    width: '100%', 
+    height: 'auto',
+    width: '100%',
     playerVars: {
       autoplay: 0,
     },
