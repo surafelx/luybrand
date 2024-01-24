@@ -8,10 +8,11 @@ const VideoPlayer = () => {
   const videoId = '6jBb1RFBnBY';
 
   return (
-    <div className="video-container rounded-xl md:ml-auto max-w-2xl">
+    <div className="video-container rounded-xl ml-auto max-w-2xl">
       <iframe
         width="100%"
         height="400"
+        className="block"
         src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube Video"
         frameBorder="0"
@@ -66,7 +67,7 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
-                
+
                 <VideoPlayer />
               </motion.div>
             </div>
