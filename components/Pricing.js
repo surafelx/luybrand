@@ -70,7 +70,7 @@ const Pricing = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <img
-                    src="/assets/standard.png"
+                    src="/assets/stan-plan.png"
                     className=""
                     style={{ width: "100%", height: "auto" }}
                     alt="Premium Plan"
@@ -197,10 +197,10 @@ const Pricing = () => {
               Testimonials
             </motion.h3>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
-            <motion.div variants={scrollAnimation}>
+          <ScrollAnimationWrapper className="">
+            {/* <motion.div variants={scrollAnimation}> */}
               <Testimoni />
-            </motion.div>
+            {/* </motion.div> */}
           </ScrollAnimationWrapper>
         </div>
       </div>
