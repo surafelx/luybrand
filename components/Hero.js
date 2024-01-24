@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import YouTube from 'react-youtube';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
+
 
 const VideoPlayer = () => {
   const opts = {
@@ -15,7 +18,7 @@ const VideoPlayer = () => {
 
   const opts2 = {
     height: '200',
-    width: '400',
+    width: '690',
     playerVars: {
       autoplay: 0,
     },
@@ -89,9 +92,14 @@ const Hero = ({
             className="flex justify-center h-full w-full flex-col xl:flex-row gap-8 xl:gap-0"
             variants={scrollAnimation}>
             <div className="flex w-full">
-              <motion.div className="h-full w-full" variants={scrollAnimation}>
+              <motion.div className="h-full w-full xl:px-8" variants={scrollAnimation}>
                 <div className="relative">
-                  <VideoPlayer />
+                  <LiteYouTubeEmbed
+                    id="6jBb1RFBnBY"
+                    className="rouned-xl px-4"
+                    title="ይህ Video ሳታዩ social media እንዳትጀምሩ !"
+                  />
+                  {/* <VideoPlayer /> */}
                 </div>
               </motion.div>
             </div>
