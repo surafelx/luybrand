@@ -11,7 +11,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/hamdifeki?igsh=eGV6NWp4bHVsazZr&utm_source=qr">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             style={{
@@ -24,7 +24,7 @@ const Footer = () => {
         <a href="https://youtu.be/VbqOdf8RbyY?si=2_DRWKEKnf1WkfU0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             style={{
@@ -36,9 +36,9 @@ const Footer = () => {
         </a>
         <a href="https://t.me/Luybrand">
           <svg
-            class="h-6 w-6"
+            className="h-6 w-6"
             fill="currentColor"
-            viewbox="0 0 24 24"
+            viewBox="0 0 24 24"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             style={{
@@ -57,7 +57,7 @@ const Footer = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            class="h-6 w-6"
+            className="h-6 w-6"
             style={{
               cursor: 'pointer'
             }}>
