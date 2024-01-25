@@ -141,7 +141,7 @@ const Hero = ({
               </motion.div>
             </div>
             <div className=" flex flex-col justify-center">
-              <p style={{ fontFamily: 'Poppins', textTransform: 'uppercase', textAlign: 'center', fontWeight: '900', color: 'white', fontSize: '18px' }} >
+              <p style={{ fontFamily: 'Milkipa', textTransform: 'uppercase', textAlign: 'center', fontWeight: '900', color: 'white', fontSize: '18px' }} >
                 Mastering the Art of Digital Influence
               </p>
               <p style={{ fontFamily: 'jiret', color: 'white', textAlign: 'center', fontSize: '18px' }}>

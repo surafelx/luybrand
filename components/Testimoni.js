@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useMemo } from "react";
+import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import getScrollAnimation from "../utils/getScrollAnimation";
+import { motion } from "framer-motion";
 
 const Testimoni = ({
   listTestimoni = [
@@ -81,8 +84,21 @@ const Testimoni = ({
     },
   ],
 }) => {
+  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
   return (
     <>
+    <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="flex flex-col justify-center min-w-[500px] items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: .2
+                  }
+                }}
+              >
       <div className="block mx-auto md:flex  items-stretch justify-items-stretch flex-grow flex-wrap">
         {listTestimoni.map((listTestimonis, index) => (
           <div className="p-2 items-stretch md:w-1/3 w-full" key={index}>
@@ -123,6 +139,8 @@ const Testimoni = ({
           </div>
         ))}
       </div>
+      </motion.div>
+      </ScrollAnimationWrapper>
     </>
   );
 };

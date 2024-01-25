@@ -10,14 +10,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Milkipa';
+  src: url('../public/assets/fonts/Milkipa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 html {
-  font-family: "Rubik", sans-serif;
+  font-family: "Milkipa", sans-serif;
   height: 100vh;
   width: 100vw;
 }
 
 body {
+
   background: black;
   color: white;
   height: 100vh;
