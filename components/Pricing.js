@@ -13,22 +13,22 @@ const Pricing = () => {
       className=" w-full py-14"
       id="pricing"
     >
+
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+        <ScrollAnimationWrapper>
+          <motion.h3
+            className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
+            Pricing
+          </motion.h3>
+        </ScrollAnimationWrapper>
         <div className="flex flex-col w-full">
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center ">
-              <motion.div
-                variants={scrollAnimation}
+            <div className="flex justify-center ">
+              <div
                 className="flex flex-col justify-center min-w-[500px] items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <img
+                  <img
                     src="/assets/basic.png"
                     className=""
                     style={{ width: "100%", height: "auto" }}
@@ -54,19 +54,12 @@ const Pricing = () => {
                     <ButtonOutline >Join Now</ButtonOutline>
                   </a>
                 </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
+              </div>
+            </div>
 
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
+            <div className="flex justify-center">
+              <div
                 className="flex flex-col justify-center items-center min-w-[500px] border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <img
@@ -99,25 +92,18 @@ const Pricing = () => {
                     <ButtonOutline >Join Now</ButtonOutline>
                   </a>
                 </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
+              </div>
+            </div>
 
           </div>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
 
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
+            <div className="flex justify-center">
+              <div
                 className="flex flex-col justify-center min-w-[500px] items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <img
+                  <img
                     src="/assets/vip.png"
                     className=""
                     style={{ width: "100%", height: "auto" }}
@@ -145,25 +131,18 @@ const Pricing = () => {
                   <p className="text-2xl text-white text-center mb-4 ">
                     2289 Birr
                   </p>
-                  <a href="https://t.me/Luymentor1">
+                  <a href="https://t.me/Luymentor">
                     <ButtonOutline >Join Now</ButtonOutline>
                   </a>
                 </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div
                 className="flex flex-col justify-center items-center min-w-[500px] border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <img
+                  <img
                     src="/assets/one-on-one.png"
                     className=""
                     style={{ width: "100%", height: "auto" }}
@@ -184,24 +163,22 @@ const Pricing = () => {
                   </p>
                   <ButtonOutline>Enroll Me</ButtonOutline>
                 </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
-              variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
               Testimonials
             </motion.h3>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="">
-            {/* <motion.div variants={scrollAnimation}> */}
-              <Testimoni />
-            {/* </motion.div> */}
-          </ScrollAnimationWrapper>
+          {/* <ScrollAnimationWrapper className="w-full flex flex-col py-12"> */}
+          <Testimoni />
+          {/* </motion.div> */}
+          {/* </ScrollAnimationWrapper> */}
         </div>
       </div>
     </div>
