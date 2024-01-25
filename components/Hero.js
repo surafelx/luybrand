@@ -54,6 +54,20 @@ const VideoPlayer = () => {
 };
 
 
+const YoutubeEmbed = ({ embedId }) => (
+  <div className="video-responsive">
+    <iframe
+      width="853"
+      height="480"
+      src={`https://www.youtube.com/embed/${embedId}`}
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      title="Embedded youtube"
+    />
+  </div>
+);
+
 const Hero = ({
 
 }) => {
@@ -94,11 +108,34 @@ const Hero = ({
             <div className="flex w-full">
               <motion.div className="h-full w-full xl:px-8" variants={scrollAnimation}>
                 <div className="relative">
-                  <LiteYouTubeEmbed
-                    id="6jBb1RFBnBY"
-                    className="rouned-xl px-4"
-                    title="ይህ Video ሳታዩ social media እንዳትጀምሩ !"
-                  />
+                  <div className="video-responsive">
+                    <iframe
+                      width="853"
+                      height="480"
+                      src={`https://www.youtube.com/embed/6jBb1RFBnBY`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      title="Embedded youtube"
+                    />
+                  </div>
+                  <style jsx>{`
+    .video-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+    
+    .video-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      border-radius: 10px;
+    }
+   `}</style>
                   {/* <VideoPlayer /> */}
                 </div>
               </motion.div>
