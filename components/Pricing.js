@@ -131,7 +131,7 @@ const Pricing = () => {
                   <p className="text-2xl text-white text-center mb-4 ">
                     2289 Birr
                   </p>
-                  <a href="https://t.me/Luymentor">
+                  <a href="https://t.me/Luybrand1">
                     <ButtonOutline >Join Now</ButtonOutline>
                   </a>
                 </div>
@@ -161,7 +161,9 @@ const Pricing = () => {
                   <p className="text-2xl text-white text-center mb-4 ">
                     Enroll Me
                   </p>
-                  <ButtonOutline>Enroll Me</ButtonOutline>
+                  <a href="https://t.me/Luymentor">
+                    <ButtonOutline >Join Now</ButtonOutline>
+                  </a>
                 </div>
               </div>
             </div>
